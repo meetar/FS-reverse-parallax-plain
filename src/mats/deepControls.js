@@ -1,0 +1,17 @@
+export const deepControls = {
+  samples: { value: 10, min: 10, max: 64, step: 1 },
+  transmission: { value: 1, min: .98, max: 1, step: 0.01 },
+  thickness: { value: .33, min: 0, max: .5, step: 0.01 },
+  chromaticAberration: { value: 1., min: 0, max: 1, step: 0.01 },
+  anisotropy: { value: .85, min: 0, max: 1, step: 0.01 },
+  roughness: { value: .17, min: 0, max: 1, step: 0.01 },
+  distortion: { value:  0.25, min: 0, max: 1, step: 0.01 },
+  distortionScale: { value:  0.15, min: 0, max: 1, step: 0.01 },
+  ior: { value:  .95, min: 0, max: 2, step: 0.01 },
+  opacity: { value: .85, min: 0, max: 1, step: 0.01 },
+  envMapIntensity: { value: .2, min: 0, max: 1, step: 0.01 },
+  reflectivity: { value:  .4, min: 0, max: 1, step: 0.01 },
+  clearcoat: { value:  1, min: 0, max: 0, step: 0.01 },
+  clearcoatRoughness: { value: .28, min: 0, max: 1, step: 0.01 },
+  normalScale: { value: 0, min: 0, max: 0, step: 0.01 },
+}

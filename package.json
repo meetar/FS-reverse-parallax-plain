@@ -1,0 +1,40 @@
+{
+  "name": "reverse-parallax-shader",
+  "version": "1.0.0",
+  "description": "A demo of a reverse parallax shader.",
+  "homepage": ".",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@react-three/drei": "9.68.4",
+    "@react-three/fiber": "8.12.2",
+    "@react-three/postprocessing": "2.7.1",
+    "@types/three": "0.150.2",
+    "detect-gpu": "^5.0.37",
+    "leva": "0.9.34",
+    "lodash": "^4.17.21",
+    "randomcolor": "^0.6.2",
+    "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.151.3"
+  },
+  "scripts": {
+    "start": "GENERATE_SOURCEMAP=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
