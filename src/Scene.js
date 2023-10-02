@@ -27,7 +27,7 @@ return (
           />
 
         {/** Controls */}
-        <OrbitControls autoRotate={true} autoRotateSpeed={-1} zoomSpeed={.5} dampingFactor={0.3} enableRotate={true} enablePan={true} />
+        <OrbitControls autoRotate={true} autoRotateSpeed={-1} zoomSpeed={.5} dampingFactor={0.3} enableZoom={false} enableRotate={true} enablePan={true} />
 
       </>
       )
