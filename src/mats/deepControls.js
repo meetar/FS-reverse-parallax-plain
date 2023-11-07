@@ -8,7 +8,7 @@ export const deepControls = {
   distortion: { value:  0.25, min: 0, max: 1, step: 0.01 },
   distortionScale: { value:  0.15, min: 0, max: 1, step: 0.01 },
   ior: { value:  .95, min: 0, max: 2, step: 0.01 },
-  opacity: { value: .85, min: 0, max: 1, step: 0.01 },
+  opacity: { value: 1, min: 0, max: 1, step: 0.01 },
   envMapIntensity: { value: .2, min: 0, max: 1, step: 0.01 },
   reflectivity: { value:  .4, min: 0, max: 1, step: 0.01 },
   clearcoat: { value:  1, min: 0, max: 0, step: 0.01 },

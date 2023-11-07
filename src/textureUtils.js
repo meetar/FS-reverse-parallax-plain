@@ -33,7 +33,7 @@ export const randomDepth = () => {
   let map = _.sample(maps);
   // console.log('fetching', './textures/'+map);
   // return './textures/depth/'+map;
-  return './textures/depth/speckles.png';
+  return './textures/depth/speckles2.png';
 }
 
 export const colorMap = () => {

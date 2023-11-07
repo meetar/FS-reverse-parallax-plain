@@ -42,7 +42,7 @@ export default function DeepMat({config, color, geometry, normalMap, depthMap, e
   return (
     <>
       <Center position={[0, 0, 0]}>
-      <mesh scale={1} renderOrder={0} geometry={geometry} transparent={true} castShadow >
+      {/* <mesh scale={1} renderOrder={0} geometry={geometry} transparent={true} castShadow >
         <MeshTransmissionMaterial {...parallaxConfig} {...deepConfig} {...config}
           color={color}
           // normalMap={normalMap}
@@ -51,7 +51,7 @@ export default function DeepMat({config, color, geometry, normalMap, depthMap, e
           // clearcoatNormalScale={new THREE.Vector2(.03,.03)}
           side={THREE.DoubleSide}
         />
-        </mesh>
+        </mesh> */}
         <mesh scale={.99} renderOrder={1} geometry={geometry} >
           <ParallaxMaterial
           config={{...config, ...parallaxConfig, ...deepConfig}}

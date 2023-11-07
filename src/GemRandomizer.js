@@ -31,6 +31,8 @@ export function GemRandomizer({ gpuTier, config, trigger }) {
     const map = await new THREE.TextureLoader().loadAsync(url);
     map.wrapT = THREE.RepeatWrapping;
     map.wrapS = THREE.RepeatWrapping;
+    map.minFilter = THREE.NearestFilter;
+    map.magFilter = THREE.NearestFilter;
     map.repeat.set(2, 2); // adjust the scale along U and V axes (this is further adjusted in the shader)
     return map;
   }
@@ -80,8 +82,8 @@ export function GemRandomizer({ gpuTier, config, trigger }) {
 return ( mode &&
     <>
 
-      <directionalLight position={[0, 2, 0]} intensity={10} penumbra={1} distance={2} color={'white'} />
-      <DeepMat geometry={model} color={'#e2b9dd'} depthMap={depthMap} envMap={envMap} config={config} castShadow />
+      {/* <directionalLight position={[0, 2, 0]} intensity={10} penumbra={1} distance={2} color={'white'} /> */}
+      <DeepMat geometry={model} color={'#e2b9dd'} depthMap={depthMap} envMap={envMap} config={config} />
 
     </>
   )

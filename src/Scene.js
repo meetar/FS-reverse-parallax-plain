@@ -1,6 +1,3 @@
-import { isBrowser } from 'react-device-detect';
-import { EffectComposer, Bloom, Pixelation } from '@react-three/postprocessing'
-import { SoftShadows } from '@react-three/drei'
 import { useState, useEffect } from 'react'
 import { randomControls } from './randomControls'
 import { GemRandomizer } from './GemRandomizer.js'
