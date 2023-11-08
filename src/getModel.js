@@ -15,7 +15,7 @@ async function makeComboMesh() {
 
     // how many clones should we make?
     // const number = Math.ceil(Math.random()*10)+1;
-    const number = 6;
+    const number = 6; // constant for the simple demo
     const distance = .5;
     // arrange them evenly in a circle
     let points = divideCircleIntoPoints(number, distance);

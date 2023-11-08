@@ -1,8 +1,7 @@
 import * as THREE from 'three'
 import { useLoader } from '@react-three/fiber';
 
-// tutorial: https://www.youtube.com/watch?v=f4s1h2YETNY
-const ParallaxMaterial = ({texture, color, config}) => {
+const ParallaxMaterial = ({texture, config}) => {
   const vertexShader = useLoader(THREE.FileLoader, './parallax.vert');
   const fragmentShader = useLoader(THREE.FileLoader, './parallax.frag');
 
@@ -17,7 +16,7 @@ const ParallaxMaterial = ({texture, color, config}) => {
 
     const args = {uniforms, fragmentShader, vertexShader}
   return (
-    <shaderMaterial args={[args]} depthWrite={true} side={THREE.FrontSide} depthTest={true} alphaTest={0} transparent={true} />
+    <shaderMaterial args={[args]} depthWrite={true} />
   )
 }
 

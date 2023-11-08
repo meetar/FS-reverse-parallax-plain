@@ -61,7 +61,6 @@ export function calculateDeltas(angleDegrees, distance) {
   // calculate the Euler angles for the rotation
   const rotation = new THREE.Euler();
   rotation.setFromVector3(rotationVector);
-  // console.log(rotation);
 
   return { deltaX, deltaZ, rotationVector, rotation };  
   // return { deltaX, deltaY, rotationAngleDegrees };

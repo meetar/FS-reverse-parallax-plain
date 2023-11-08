@@ -15,18 +15,12 @@ varying vec2 vUv;
 varying vec3 vNormal;
 varying vec3 vViewPosition;
 
-vec3 viewDir; vec2 offset; vec4 color;
+
 
 vec2 parallaxMap( in vec3 V , in float offset) {
 
-  // float initialHeight = texture2D( _texture, vUv * _scale ).r;
-  float initialHeight = 1.;
+  vec2 texCoordOffset = _height * offset * V.xy / V.z;
 
-  // No Offset Limitting: messy, floating output at grazing angles.
-  vec2 texCoordOffset = _height * offset * V.xy / V.z * initialHeight;
-
-  // Offset Limiting
-  // vec2 texCoordOffset = _height * V.xy * initialHeight;
   return vUv - texCoordOffset;
 
 }
@@ -73,8 +67,8 @@ vec2 parallaxMap( in vec3 V , in float offset) {
 void main() {
 
   float lum;
-
   float offset;
+  vec4 color;
 
   for (float i = _steps + 1.; i >= 0.; i--) {
     float percent = (1. / _steps) * i;
