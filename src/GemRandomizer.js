@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import DeepMat from './mats/DeepMat'
 import { getModel } from './getModel'
 
-export function GemRandomizer() {
+export function GemRandomizer(config) {
   const [model, setModel] = useState()
   const [depthMap, setDepthMap] = useState()
 
@@ -39,7 +39,7 @@ export function GemRandomizer() {
 
 return (
     <>
-      <DeepMat geometry={model} depthMap={depthMap} />
+      <DeepMat {...config} geometry={model} depthMap={depthMap} />
     </>
   )
 }
