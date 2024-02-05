@@ -8,7 +8,7 @@
 
     vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
     // set viewPosition varying – this is the position in view space
-    vViewPosition = -mvPosition.xyz;
+    vViewPosition = mvPosition.xyz;
 
     // calculate normal in view space and set normal varying
     vNormal = normalize(normalMatrix * normal);
