@@ -3,7 +3,7 @@ import { OrbitControls } from '@react-three/drei'
 
 export default function Scene(config) {
 
-  const rotate = config.config?.rotate || true;
+  const rotate = config?.config ? config?.config?.rotate : true;
   return (
     <>
       <GemRandomizer {...config} />
